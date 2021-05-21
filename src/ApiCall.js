@@ -14,7 +14,7 @@ export const getStories = async (type) => {
     const { data: storyIds } = await axios.get(
       `${BASE_URL}/${type}stories.json`
     );
-    const stories = await Promise.all(storyIds.slice(0, 30).map(getStory));
+    const stories = await Promise.all(storyIds.slice(0, 40).map(getStory));
     return stories;
   } catch (error) {
     console.log(error);

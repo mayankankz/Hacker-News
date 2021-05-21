@@ -6,7 +6,6 @@ import useData from '../hooks/useData';
 const ViewStories = (props) => {
   const { type } = props.match.params;
   const { isLoading, stories } = useData(type);
-
   return (
     <React.Fragment>
       {isLoading ? (

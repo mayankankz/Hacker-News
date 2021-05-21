@@ -4,6 +4,7 @@ import { getStories } from "../ApiCall";
 const useData = (type) =>{
     const[stories,setStories] = useState([]);
     const[isLoading,setIsLoading] =useState(false);
+   
 
     useEffect(()=>{
         setIsLoading(true);
